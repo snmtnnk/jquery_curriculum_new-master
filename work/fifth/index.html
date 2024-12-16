@@ -89,9 +89,7 @@
           var val = $('.select').val();
           $('.list li').each(function() {
             var id = $(this).data('category-type');
-            if (val === id) {
-              $(this).show();
-            }else if(val === 'all') {
+            if (val === id || val === 'all') {
               $(this).show();
             }else {
               $(this).hide();
