@@ -48,10 +48,10 @@
     <script src="../../common/js/jquery.js"></script>
     <script>
       function block() {
-        return (this).children().stop(true, false).slideDown();
+        $(this).children().stop(true, false).slideDown();
       };
       function none() {
-        return (this).children('.menu__list__childList').stop(true, false).slideUp();
+        $(this).children('.menu__list__childList').stop(true, false).slideUp();
       };
       $('.menu__list').find('li').hover(block, none);
       // 今回やるのはドロップメニューです。
